@@ -1,3 +1,4 @@
+/* General Styling */
 .App {
   text-align: center;
 }
@@ -34,5 +35,173 @@
   }
   to {
     transform: rotate(360deg);
+  }
+}
+
+/* Home Page Styling */
+.home-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-top: 10px; /* Space for AppBar */
+  gap: 20px;
+}
+
+.welcome-card {
+  max-width: 1000px;
+  width: 100%;
+  margin: 20px;
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+.welcome-content {
+  padding: 40px;
+}
+
+.welcome-title {
+  font-size: 2.0rem;
+  margin-bottom: 20px;
+}
+
+.welcome-subtitle {
+  font-size: 1.0rem;
+  margin-bottom: 20px;
+}
+
+.discover-button {
+  margin-top: 40px;
+}
+
+.showcase-card {
+  width: 100%;
+  max-width: 1000px;
+  margin: 20px;
+}
+
+.showcase-image {
+  width: 100%;
+  height: auto;
+}
+
+/* Courses Page Styling */
+/* Ensure video container is initially hidden when required */
+.hidden {
+  display: none;
+}
+
+.course-card {
+  height: 250px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  padding: 20px;
+  box-sizing: border-box;
+}
+
+.course-card-content {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+.course-card-title {
+  margin-top: 10px;
+  word-wrap: break-word;
+}
+
+
+/* Face Detection Page Styling */
+.myapp {
+  position: relative;
+  display: flex;
+  flex-direction: column; /* Ensure AppBar and content are stacked vertically */
+  align-items: center;
+}
+
+.app-container {
+  position: relative;
+  display: flex;
+  flex-direction: column; /* Ensure content is stacked vertically */
+  align-items: center;
+  margin-top: 64px; /* Space for AppBar */
+}
+
+.appvide {
+  position: relative;
+}
+
+video {
+  border: 1px solid #ddd;
+  border-radius: 8px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+.appcanvas {
+  position: absolute;
+  top: 0;
+  left: 0;
+  border-radius: 8px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+  width: 940px; /* Match video width */
+  height: 650px; /* Match video height */
+  pointer-events: none; /* Make sure the canvas doesn't capture clicks */
+}
+
+/* Face Data Card Styling */
+.face-data {
+  position: absolute;
+  top: 20px; /* Space from the top */
+  right: 20px; /* Space from the right */
+  width: 250px;
+  max-height: 80vh; /* Limit the height of the card */
+  padding: 10px;
+  background-color: white;
+  border: 1px solid #ddd;
+  border-radius: 8px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+  text-align: left;
+  overflow-y: auto; /* Make the card scrollable */
+  overflow-x: hidden;
+  z-index: 1; /* Ensure the card is on top */
+}
+
+.face-data h2 {
+  margin-top: 0;
+  color: #333;
+}
+
+.face-data h3 {
+  margin-bottom: 5px;
+  color: #666;
+}
+
+.face-data ul {
+  list-style-type: none;
+  padding: 0;
+  margin: 0;
+}
+
+.face-data li {
+  padding: 5px 0;
+  border-bottom: 1px solid #ddd;
+}
+
+.face-data li:last-child {
+  border-bottom: none;
+}
+
+/* Add media query for responsiveness */
+@media (max-width: 768px) {
+  .face-data {
+    width: 100%;
+    top: auto;
+    bottom: 0;
+    right: 0;
   }
 }
