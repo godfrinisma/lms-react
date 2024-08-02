@@ -205,3 +205,121 @@ video {
     right: 0;
   }
 }
+
+body {
+  font-family: Arial, sans-serif;
+  background-color: #f0f0f0;
+}
+
+.navbar {
+  margin-bottom: 50px;
+}
+
+h1 {
+  color: #343a40;
+}
+
+#startCourseBtn {
+  padding: 10px 20px;
+  font-size: 18px;
+}
+
+.hidden {
+  display: none;
+}
+
+#videoContainer {
+  margin-top: 20px;
+}
+
+video {
+  max-width: 100%;
+  border: 2px solid #343a40;
+  border-radius: 10px;
+}
+
+#alertDiv {
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  background-color: white;
+  padding: 20px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+  z-index: 1000;
+}
+
+.video-card {
+  height: 100%;
+}
+
+.video-content {
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+}
+
+.video-element {
+  flex-grow: 1;
+  max-height: 100%;
+}
+
+
+.container {
+  margin-top: 5rem;
+}
+
+.text-center {
+  text-align: center;
+}
+
+.w-100 {
+  width: 100%;
+}
+
+/* Grid Styles */
+.mt-5 {
+  margin-top: 5rem;
+}
+
+/* Card Styles */
+.card-content {
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.card-video {
+  flex-grow: 1;
+}
+
+/* Typography Styles */
+.attention-status {
+  color: green;
+}
+
+.attention-status.not-attentive,
+.attention-status.detection-stopped {
+  color: red;
+}
+
+/* Modal Styles */
+.modal-box {
+  width: 400px;
+  background-color: var(--background-paper, #fff);
+  box-shadow: 24px;
+  padding: 16px;
+  border-radius: 8px;
+  text-align: center;
+}
+.modal-title {
+  margin-bottom: 8px;
+  color: red;
+}
+
+.modal-description {
+  margin-bottom: 12px;
+}
+
